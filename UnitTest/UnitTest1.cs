@@ -79,11 +79,12 @@ namespace UnitTest
             // Test if new games are added with multiple score results
             newBoard.AddGame("France", 2, "Portugal", 3);
             newBoard.AddGame("England", 2, "Ireland", 2);
+            newBoard.AddGame("Netherlands", 2, "Finland", 1);
             newBoard.AddGame("Canada", 1, "Russia", 1);
 
             List<string> GamesPlusThree = newBoard.GetSummaryByTotalScore(newBoard.Games);
 
-            Assert.AreEqual(9, GamesPlusThree.Count);
+            Assert.AreEqual(10, GamesPlusThree.Count);
 
             Assert.AreEqual("Chile 2 - Brazil 10", GamesPlusThree[0]);
             Assert.AreEqual("Andorra 1 - Ukraine 11", GamesPlusThree[1]);
@@ -92,8 +93,9 @@ namespace UnitTest
             Assert.AreEqual("Austria 1 - Switzerland 9", GamesPlusThree[4]);
             Assert.AreEqual("France 2 - Portugal 3", GamesPlusThree[5]);
             Assert.AreEqual("England 2 - Ireland 2", GamesPlusThree[6]);
-            Assert.AreEqual("Germany 1 - Italy 2", GamesPlusThree[7]);
-            Assert.AreEqual("Canada 1 - Russia 1", GamesPlusThree[8]);
+            Assert.AreEqual("Netherlands 2 - Finland 1", GamesPlusThree[7]);
+            Assert.AreEqual("Germany 1 - Italy 2", GamesPlusThree[8]);
+            Assert.AreEqual("Canada 1 - Russia 1", GamesPlusThree[9]);
         }
     }
 }
