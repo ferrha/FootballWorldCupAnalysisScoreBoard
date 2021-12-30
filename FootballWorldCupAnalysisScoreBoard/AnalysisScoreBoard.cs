@@ -23,7 +23,7 @@ namespace FootballWorldCupAnalysisScoreBoard
                 FootballTeam homeTeam = new FootballTeam(pHomeTeamName, pHomeTeamScore);
                 FootballTeam awayTeam = new FootballTeam(pAwayTeamName, pAwayTeamScore);
 
-                Games.Add(homeTeam.teamName + " " + homeTeam.teamScore + " - " + awayTeam.teamName + " " + awayTeam.teamScore, homeTeam.teamScore + awayTeam.teamScore);
+                Games.Add(homeTeam.TeamName + " " + homeTeam.TeamScore + " - " + awayTeam.TeamName + " " + awayTeam.TeamScore, homeTeam.TeamScore + awayTeam.TeamScore);
             }
             catch (Exception e)
             {
@@ -74,13 +74,13 @@ namespace FootballWorldCupAnalysisScoreBoard
     ///</returns>
     internal class FootballTeam
     {
-        public string teamName { get; set; }
-        public int teamScore { get; set; }
+        public string TeamName { get; set; }
+        public int TeamScore { get; set; }
 
         public FootballTeam(string pTeamName, int pTeamScore)
         {
-            teamName = pTeamName;
-            teamScore = pTeamScore;
+            TeamName = pTeamName;
+            TeamScore = pTeamScore;
         }
     }
 }
