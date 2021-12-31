@@ -62,6 +62,7 @@ namespace FootballWorldCupAnalysisScoreBoard
             }
             catch(Exception e)
             {
+                Console.WriteLine("Exception at AnalysisScoreBoard.GetSummaryByTotalScore: " + e.ToString() + " - " + e.StackTrace);
                 throw e;
             }
         }
