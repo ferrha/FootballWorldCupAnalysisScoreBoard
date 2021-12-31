@@ -15,5 +15,6 @@ Download the repository and open it with Visual Studio and run. _Program.cs_ pro
 Running the _UnitTest_ project will execute the unit test written for the library.
 
 ## TBD and improvement opportunities
-- Create a WindowsForm to add new games and add a button to retrieve the summary results.
-- Save the games added in a DataBase (for example MySql or MongoDB).
+- Create a WindowsForm to add new games and add a button to show the summary results.
+- Save the games added into a DataBase, such as MySql or MongoDB.
+- Exporting to a text file (txt, csv, json, xml) the summary results.
