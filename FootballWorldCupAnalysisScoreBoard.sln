@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballWorldCupAnalysisScoreBoard", "FootballWorldCupAnalysisScoreBoard\FootballWorldCupAnalysisScoreBoard.csproj", "{16CBAAFD-B97E-4297-9058-1519837B0B8C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{0D9D6139-EAD1-4903-8047-866930E9F065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballWorldCupAnalysisScoreBoard", "FootballWorldCupAnalysisScoreBoard\FootballWorldCupAnalysisScoreBoard.csproj", "{16CBAAFD-B97E-4297-9058-1519837B0B8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{23798D8A-8B1D-4DBC-B6E6-237BEE15685D}"
 EndProject
