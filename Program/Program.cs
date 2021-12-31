@@ -14,8 +14,10 @@ class Program
         string input;
         AnalysisScoreBoard newBoard = new AnalysisScoreBoard();
 
+        // Main loop
         do
         {
+            // Loop to add games
             do
             {
                 if (row == 0)
@@ -67,6 +69,7 @@ class Program
             if (string.IsNullOrEmpty(input) || input.ToUpper() == "Y") ResetConsole();
         } while (true);
 
+        // Method to clean the console
         void ResetConsole()
         {
             if (row > 0)
