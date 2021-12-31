@@ -65,16 +65,16 @@ namespace UnitTest
             // Test if a new game is added with the highest score is returned the first one
             newBoard.AddGame("Chile", 2, "Brazil", 10);
 
-            List<string> GamesPlusOne = newBoard.GetSummaryByTotalScore(newBoard.Games);
+            Games = newBoard.GetSummaryByTotalScore(newBoard.Games);
 
-            Assert.AreEqual(6, GamesPlusOne.Count);
+            Assert.AreEqual(6, Games.Count);
 
-            Assert.AreEqual("Chile 2 - Brazil 10", GamesPlusOne[0]);
-            Assert.AreEqual("Andorra 1 - Ukraine 11", GamesPlusOne[1]);
-            Assert.AreEqual("Argentina 10 - Peru 2", GamesPlusOne[2]);
-            Assert.AreEqual("Spain 12 - Malta 0", GamesPlusOne[3]);
-            Assert.AreEqual("Austria 1 - Switzerland 9", GamesPlusOne[4]);
-            Assert.AreEqual("Germany 1 - Italy 2", GamesPlusOne[5]);
+            Assert.AreEqual("Chile 2 - Brazil 10", Games[0]);
+            Assert.AreEqual("Andorra 1 - Ukraine 11", Games[1]);
+            Assert.AreEqual("Argentina 10 - Peru 2", Games[2]);
+            Assert.AreEqual("Spain 12 - Malta 0", Games[3]);
+            Assert.AreEqual("Austria 1 - Switzerland 9", Games[4]);
+            Assert.AreEqual("Germany 1 - Italy 2", Games[5]);
 
             // Test if new games are added with multiple score results
             newBoard.AddGame("France", 2, "Portugal", 3);
@@ -82,20 +82,20 @@ namespace UnitTest
             newBoard.AddGame("Netherlands", 2, "Finland", 1);
             newBoard.AddGame("Canada", 1, "Russia", 1);
 
-            List<string> GamesPlusThree = newBoard.GetSummaryByTotalScore(newBoard.Games);
+            Games = newBoard.GetSummaryByTotalScore(newBoard.Games);
 
-            Assert.AreEqual(10, GamesPlusThree.Count);
+            Assert.AreEqual(10, Games.Count);
 
-            Assert.AreEqual("Chile 2 - Brazil 10", GamesPlusThree[0]);
-            Assert.AreEqual("Andorra 1 - Ukraine 11", GamesPlusThree[1]);
-            Assert.AreEqual("Argentina 10 - Peru 2", GamesPlusThree[2]);
-            Assert.AreEqual("Spain 12 - Malta 0", GamesPlusThree[3]);
-            Assert.AreEqual("Austria 1 - Switzerland 9", GamesPlusThree[4]);
-            Assert.AreEqual("France 2 - Portugal 3", GamesPlusThree[5]);
-            Assert.AreEqual("England 2 - Ireland 2", GamesPlusThree[6]);
-            Assert.AreEqual("Netherlands 2 - Finland 1", GamesPlusThree[7]);
-            Assert.AreEqual("Germany 1 - Italy 2", GamesPlusThree[8]);
-            Assert.AreEqual("Canada 1 - Russia 1", GamesPlusThree[9]);
+            Assert.AreEqual("Chile 2 - Brazil 10", Games[0]);
+            Assert.AreEqual("Andorra 1 - Ukraine 11", Games[1]);
+            Assert.AreEqual("Argentina 10 - Peru 2", Games[2]);
+            Assert.AreEqual("Spain 12 - Malta 0", Games[3]);
+            Assert.AreEqual("Austria 1 - Switzerland 9", Games[4]);
+            Assert.AreEqual("France 2 - Portugal 3", Games[5]);
+            Assert.AreEqual("England 2 - Ireland 2", Games[6]);
+            Assert.AreEqual("Netherlands 2 - Finland 1", Games[7]);
+            Assert.AreEqual("Germany 1 - Italy 2", Games[8]);
+            Assert.AreEqual("Canada 1 - Russia 1", Games[9]);
         }
     }
 }
