@@ -17,4 +17,4 @@ Running the _UnitTest_ project will execute the unit test written for the librar
 ## TBD and improvement opportunities
 - Create a WindowsForm to add new games and add a button to show the summary results.
 - Save the games added into a DataBase, such as MySql or MongoDB.
-- Exporting to a text file (txt, csv, json, xml) the summary results.
+- Export to a text file (txt, csv, json, xml) the summary results.
