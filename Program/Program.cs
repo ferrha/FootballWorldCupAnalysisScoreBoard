@@ -33,16 +33,26 @@ class Program
                 if (string.IsNullOrEmpty(HomeTeamName)) break;
 
                 Console.WriteLine($"{Environment.NewLine}Home team score:");
-                HomeTeamScore = int.Parse(Console.ReadLine());
-                if (string.IsNullOrEmpty(HomeTeamScore.ToString())) break;
+                input = Console.ReadLine();
+                if (string.IsNullOrEmpty(input)) break;
+                bool success = Int32.TryParse(input, out HomeTeamScore);
+                if (!success)
+                {
+                    Console.WriteLine($"Attempted conversion of '{input}' failed, inserted 0 as score.");
+                }
 
                 Console.WriteLine($"{Environment.NewLine}Away team name:");
                 AwayTeamName = Console.ReadLine();
                 if (string.IsNullOrEmpty(AwayTeamName)) break;
 
                 Console.WriteLine($"{Environment.NewLine}Away team score:");
-                AwayTeamScore = int.Parse(Console.ReadLine());
-                if (string.IsNullOrEmpty(AwayTeamScore.ToString())) break;
+                input = Console.ReadLine();
+                if (string.IsNullOrEmpty(input)) break;
+                success = Int32.TryParse(input, out AwayTeamScore);
+                if (!success)
+                {
+                    Console.WriteLine($"Attempted conversion of '{input}' failed, inserted 0 as score.");
+                }
 
                 Console.WriteLine();
                 row++;
