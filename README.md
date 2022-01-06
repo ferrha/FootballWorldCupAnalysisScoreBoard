@@ -6,8 +6,8 @@ Football World Cup Score Analysis Board is an example project written in .Net Fr
 
 ## Documentation
 The library _FootballWorldCupAnalysisScoreBoard.dll_ contains two methods:
-- AddGame(string pHomeTeamName, int pHomeTeamScore, string pAwayTeamName, int pAwayTeamScore): adds to a _OrderedDictionary_ a new game for the Home Team name and score and Away Team name and score passed as parameters.
-- GetSummaryByTotalScore(OrderedDictionary pGames): returns a _List of strings_ with the games previously added ordered by total score, those games with the same total score will be returned ordered by the most recently added to our system.
+- AddGame(string homeTeamName, int homeTeamScore, string awayTeamName, int awayTeamScore): adds to a _OrderedDictionary_ a new game for the Home Team name and score and Away Team name and score passed as parameters.
+- GetSummaryByTotalScore(Dictionary <string, int> gamesAdded): returns a _List of strings_ with the games previously added ordered by total score, those games with the same total score will be returned ordered by the most recently added to our system.
 
 ## Development and testing in a local environment
 Download the repository and open it with Visual Studio and run. _Program.cs_ provided is a console application that helps to use and debug the library _FootballWorldCupAnalysisScoreBoard.dll_ .
