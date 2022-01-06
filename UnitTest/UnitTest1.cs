@@ -23,22 +23,22 @@ namespace UnitTest
 
             Assert.AreEqual(5, newBoard.Games.Count);
 
-            Assert.AreEqual("Spain 12 - Malta 0", newBoard.Games.Cast<DictionaryEntry>().ElementAt(0).Key.ToString());
-            Assert.AreEqual(12, newBoard.Games.Cast<DictionaryEntry>().ElementAt(0).Value);
-            Assert.AreNotEqual("Spain 12 - Malta 1", newBoard.Games.Cast<DictionaryEntry>().ElementAt(0).Key.ToString());
-            Assert.AreNotEqual(13, newBoard.Games.Cast<DictionaryEntry>().ElementAt(0).Value);
+            Assert.AreEqual("Spain 12 - Malta 0", newBoard.Games.ElementAt(0).Key.ToString());
+            Assert.AreEqual(12, newBoard.Games.ElementAt(0).Value);
+            Assert.AreNotEqual("Spain 12 - Malta 1", newBoard.Games.ElementAt(0).Key.ToString());
+            Assert.AreNotEqual(13, newBoard.Games.ElementAt(0).Value);
 
-            Assert.AreEqual("Germany 1 - Italy 2", newBoard.Games.Cast<DictionaryEntry>().ElementAt(1).Key.ToString());
-            Assert.AreEqual(3, newBoard.Games.Cast<DictionaryEntry>().ElementAt(1).Value);
+            Assert.AreEqual("Germany 1 - Italy 2", newBoard.Games.ElementAt(1).Key.ToString());
+            Assert.AreEqual(3, newBoard.Games.ElementAt(1).Value);
 
-            Assert.AreEqual("Argentina 10 - Peru 2", newBoard.Games.Cast<DictionaryEntry>().ElementAt(2).Key.ToString());
-            Assert.AreEqual(12, newBoard.Games.Cast<DictionaryEntry>().ElementAt(2).Value);
+            Assert.AreEqual("Argentina 10 - Peru 2", newBoard.Games.ElementAt(2).Key.ToString());
+            Assert.AreEqual(12, newBoard.Games.ElementAt(2).Value);
 
-            Assert.AreEqual("Austria 1 - Switzerland 9", newBoard.Games.Cast<DictionaryEntry>().ElementAt(3).Key.ToString());
-            Assert.AreEqual(10, newBoard.Games.Cast<DictionaryEntry>().ElementAt(3).Value);
+            Assert.AreEqual("Austria 1 - Switzerland 9", newBoard.Games.ElementAt(3).Key.ToString());
+            Assert.AreEqual(10, newBoard.Games.ElementAt(3).Value);
 
-            Assert.AreEqual("Andorra 1 - Ukraine 11", newBoard.Games.Cast<DictionaryEntry>().ElementAt(4).Key.ToString());
-            Assert.AreEqual(12, newBoard.Games.Cast<DictionaryEntry>().ElementAt(4).Value);
+            Assert.AreEqual("Andorra 1 - Ukraine 11", newBoard.Games.ElementAt(4).Key.ToString());
+            Assert.AreEqual(12, newBoard.Games.ElementAt(4).Value);
         }
 
         [TestMethod]
